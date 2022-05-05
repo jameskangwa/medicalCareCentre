@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="awe/css/all.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <header>
+                <h1 class="company">24/7 online medical care center</h1>
+                <h3 class="motto">You are never alone.</h3>
+            </header>
+            <nav>
+                <div><a href="index.html">Home</a></div>
+                <div><a href="#">List</a></div>
+                <div><a href="#">Notifications</a></div>
+                <div><a href="#">Contacts</a></div>
+            </nav>
+     <!-- CHAT BAR BLOCK -->
+     <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible"> 
+                    <div class="opp-the">
+                        <div>
+                            <a href="pediatrics.html">
+                                <img src="images\pediatrics.png" alt="">
+                            </a>
+                        </div>
+                        <p class="the-talk">Pediatrics</p>
+                    </div>
+            </button>
+    
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+    
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+    
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: crimson;"class="fa-solid fa-heart"
+                                        onclick="heartButton()"></i>
+                                    <i id="chat-icon" style="color: #333;"  class="fa-solid fa-paper-plane"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+    
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+
+</body>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/responses.js"></script>
+    <script src="scripts/chat.js"></script>
+</html>

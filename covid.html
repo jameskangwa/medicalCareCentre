@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="awe/css/all.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+         <header>
+                <h1 class="company">24/7 online medical care center</h1>
+                <h3 class="motto">You are never alone.</h3>
+        </header>
+            <nav>
+                <div><a href="index.html">Home</a></div>
+                <div><a href="#">List</a></div>
+                <div><a href="#">Notifications</a></div>
+                <div><a href="#">Contacts</a></div>
+            </nav>
+     <!-- CHAT BAR BLOCK -->
+      
+            <button id="chat-button" type="button" class="collapsible"> 
+                    <div class="opp-the">
+                        <div>
+                            <a href="covid.html">
+                                <img src="images\covid.png" alt="">
+                            </a>
+                        </div>
+                        <p class="the-talk">Covid</p>
+                    </div>
+            </button>         
+       <div class="main-part">
+           <div class="ticker">
+               
+               
+                 <h4>Check your symptoms</h4> 
+                 <div class="checks">
+                     <div><input type="checkbox" id="fever">Fever</div> 
+                     <div><input type="checkbox" id="cough">Cough</div> 
+                     <div><input type="checkbox" id="tiredness">Tiredness </div>
+                     <div><input type="checkbox" id="taste">Loss of taste or smell </div>
+                     <div><input type="checkbox" id="throat">Sore throat </div>
+                     <div><input type="checkbox" id="headache">Headache</div> 
+                     <div><input type="checkbox" id="pain">Aches and pains </div>
+                     <div><input type="checkbox" id="diarrhoea">Diarrhoea</div>
+                     <div><input type="checkbox" id="rash">A rash on skin, or discoloration of fingers or toes</div>
+                     <div><input type="checkbox" id="eyes">Red or irritated eyes</div>
+                     <div><input type="checkbox" id="breath">Difficult breathing or shortness of breath</div>
+                     <div><input type="checkbox" id="speech">Loss of speech or mobility</div>
+                     <div><input type="checkbox" id="chest">Chest pain </div>     
+                 </div> 
+                <button id="submit" >Submit</button><input type="submit" value="Reset" onclick="reset()" id="reset">
+                
+           </div>
+           <hr>
+          <div class="answers">
+              <div class="ans1">
+                  <p id="empty-click"></p>
+              </div>
+          </div>
+       </div>
+    </div>
+       
+
+</body>
+   <script src="scripts/disease.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/responses.js"></script>
+    <script src="scripts/chat.js"></script>
+</html>
